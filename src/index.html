@@ -1,0 +1,146 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="main">
+                <div class="container">
+                    <div class="main__inner">
+                        <div class="main__slider swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="main__banner banner swiper-slide">
+                                    <div class="banner__img">
+                                        <img src="img/banner.png" alt="">
+                                    </div>
+                                    <div class="banner__content">
+                                        <h1 class="banner__title display3">
+                                            <strong>Типовых систем</strong>
+                                            <span>очистки воды</span>
+                                            в коттедже
+                                        </h1>
+                                        <div class="banner__desc display6">Обеспечение жилища чистой водой  — основа безопасного проживания.</div>
+                                        <a href="" class="banner__link mbtn mbtn-primary-outline">Смотреть типы</a>
+                                    </div>
+                                </div>
+                                <div class="main__banner banner swiper-slide">
+                                    <div class="banner__img">
+                                        <img src="img/banner.png" alt="">
+                                    </div>
+                                    <div class="banner__content">
+                                        <h1 class="banner__title display3">
+                                            <strong>Типовых систем</strong>
+                                            <span>очистки воды</span>
+                                            в коттедже
+                                        </h1>
+                                        <div class="banner__desc display6">Обеспечение жилища чистой водой  — основа безопасного проживания.</div>
+                                        <a href="" class="banner__link mbtn mbtn-primary-outline">Смотреть типы</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.7036 12L11.2125 3.27302C10.9236 2.97614 10.9301 2.50131 11.227 2.21246C11.5239 1.9236 11.9987 1.93011 12.2875 2.22698L21.2875 11.477C21.5708 11.7681 21.5708 12.2319 21.2875 12.523L12.2875 21.773C11.9987 22.0699 11.5239 22.0764 11.227 21.7875C10.9301 21.4987 10.9236 21.0239 11.2125 20.727L19.7036 12Z" fill="#14142B"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.29642 12L12.7875 3.27302C13.0764 2.97614 13.0699 2.50131 12.773 2.21246C12.4761 1.9236 12.0013 1.93011 11.7125 2.22698L2.71246 11.477C2.42918 11.7681 2.42918 12.2319 2.71246 12.523L11.7125 21.773C12.0013 22.0699 12.4761 22.0764 12.773 21.7875C13.0699 21.4987 13.0764 21.0239 12.7875 20.727L4.29642 12Z" fill="#14142B"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products">
+                <div class="container">
+                    <div class="products__tabs tabs">
+                        <div class="tab tab--active" data-tabs-path="1">Лучшие предложения</div>
+                        <div class="tab" data-tabs-path="2">Для квартиры</div>
+                        <div class="tab" data-tabs-path="3">Для коттеджа</div>
+                        <div class="tab" data-tabs-path="4">Промышленные решения</div>
+                        <div class="tab" data-tabs-path="5">Материалы и реагенты</div>
+                        <div class="tab" data-tabs-path="6">Комплектующие</div>
+                    </div>
+                    <div class="products__content">
+                        <div class="tab__content tab__content--active" data-tabs-path="1">
+                            @@include('components/page-blocks/_products-slider.html')
+                        </div>
+                        <div class="tab__content" data-tabs-path="2">
+                            @@include('components/page-blocks/_products-slider.html')
+                        </div>
+                        <div class="tab__content" data-tabs-path="3">
+                            @@include('components/page-blocks/_products-slider.html')
+                        </div>
+                        <div class="tab__content" data-tabs-path="4">
+                            @@include('components/page-blocks/_products-slider.html')
+                        </div>
+                        <div class="tab__content" data-tabs-path="5">
+                            @@include('components/page-blocks/_products-slider.html')
+                        </div>
+                        <div class="tab__content" data-tabs-path="6">
+                            @@include('components/page-blocks/_products-slider.html')
+                        </div>
+                    </div>
+                    <a href="" class="products__all mbtn mbtn-primary-outline">Все предложения</a>
+                </div>
+            </section>
+
+            <section class="services">
+                @@include('components/page-blocks/_services.html')
+            </section>
+
+            <section class="providers">
+                @@include('components/page-blocks/_providers.html')
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <div class="about__title display3">О компании</div>
+                    <div class="about__wrap">
+                        <div class="about__left">
+                            <div class="about__desc">
+                                Компания "Центр качества водных технологий" предлагает различные <a href="">решения очистки воды</a> для дома, дачи или коттеджа, а также для системы промышленой водоподготовки. Мы также оказываем разнообразные
+                                <a href="">услуги</a> при организации систем водоподготовки.
+                            </div>
+                            <div class="about__text body-text-big">
+                                <p>Мы сотрудничаем с ведущими мировыми производителями водоочистного оборудования и расходных материалов, это позволяет предлагать нашим клиентам самые новые методы и разработки по очистке воды, а также низкие цены.</p>
+                                <p>Специалисты компании "Центр качества водных технологий" помогут решить все проблемы с водоподготовкой на вашем предприятии самым оптимальным путем. Мы разработаем для вас полную схему водоподготовки от исходной воды до воды, удовлетворяющей всем вашим требованиям.</p>
+                                <p>Для того, чтобы предложенная схема представляла наиболие экономное и эффективное решение, мы просим вас заполнить опорный лист и выслать его нам по электронной почте или по факсу.</p>
+                            </div>
+                        </div>
+                        <div class="about__right">
+                            @@include('components/cards/_about-card.html')
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="container">
+                    <div class="info__title display3">Информация</div>
+                    <div class="info__items">
+                        @@include('components/cards/_info-card.html',{"img":"info","title":"Статьи и полезные материалы","desc":"Расскажем как подобрать оборудование и установить его самостоятельно"})
+                        @@include('components/cards/_info-card.html',{"img":"info2","title":"Стандарты <br> и нормативы","desc":"Все что нужно знать, чтобы не запутаться в формах, СНИПах, ГОСТах и т.д."})
+                        @@include('components/cards/_info-card.html',{"img":"info3","title":"Литература <br> по водоподготовке","desc":"Знание — сила! Изучая книги известных авторов можно обиться выдающихся результатов"})
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Корзина", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="cart">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item blue-link">Главная</a>
+                        <span class="breadcrumbs__item blue-link">Корзина</span>
+                    </div>
+                    <h1 class="catalog-item__title display3 extra-bold">Корзина</h1>
+                    <div class="cart__wrap">
+                        <div class="cart__left">
+                            @@include('components/cards/_cart-card.html',{"img":"product","title":"Мультипатронный (мультикартриджный) фильтр CF10 (10 м3/час )","articul":"Артикул: RO-808-550-EZ","price":"43 232"})
+                            @@include('components/cards/_cart-card.html',{"img":"product2","title":"Кабинетный умягчитель воды Ecosoft FU0835CABCE","articul":"Артикул: RO-808-550-EZ","price":"1 450"})
+                            @@include('components/cards/_cart-card.html',{"img":"product3","title":"Система очистки воды Raifil NOVO 5","articul":"Артикул: PU905W5-WF14-PR-EZ","price":"1 314"})
+                            @@include('components/cards/_cart-card.html',{"img":"product4","title":"Мультипатронный (мультикартриджный) фильтр CF10 (10 м3/час )","articul":"Артикул: CF-110-10-MC","price":"6 574"})
+                        </div>
+                        <div class="cart__right">
+                            <div class="buy-card">
+                                <div class="buy-card__all body-text">
+                                    Всего <span class="semi-bold">4 товара</span> на сумму
+                                </div>
+                                <div class="buy-card__price display3">
+                                    <div class="buy-card__price-num">
+                                        <span class="semi-bold">54 280</span> ₽
+                                    </div>
+                                    <div class="buy-card__price-count body-text">
+                                        за <span class="semi-bold">1 шт.</span>
+                                    </div>
+                                </div>
+                                <div class="buy-card__condition body-text">
+                                    с учётом скидки
+                                </div>
+                                <div class="buy-card__sale display4">
+                                    <span class="bold gray-text">14 216</span> ₽
+                                </div>
+                                <div class="buy-card__buttons">
+                                    <div class="buy-card__cart">
+                                        <button data-modal="orderModal" class="buy-card__btn mbtn mbtn-primary">
+                                            Оформить заказ
+                                        </button>
+                                    </div>
+                                    <button class="buy-card__btn mbtn mbtn-primary-outline">Купить в один клик</button>
+                                </div>
+                                <div class="buy-card__hint body-text gray-text">Стоимость заказа без учета доставки. С вами свяжется менеджер для обсуждения вариантов и стоимости доставки. Самовывоз — бесплатно</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collection collection--gray">
+                <div class="container">
+                    <div class="collection__title display3 medium">Вы смотрели</div>
+                    @@include('components/page-blocks/_products-slider2.html')
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+    @@include('components/_popups.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

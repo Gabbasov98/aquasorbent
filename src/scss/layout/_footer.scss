@@ -1,0 +1,148 @@
+.footer{
+  padding: 40px 0 47px;
+  background-color: $grayBg;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__c{
+    margin-top: 42px;
+    max-width: 320px;
+    color: #656565;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__links{
+    gap: 16px 49px;
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+  }
+  &__link{
+    display: block;
+    font-weight: 500;
+    &:not(:last-child){
+      margin-bottom: 16px;
+    }
+  }
+  &__links2{
+    max-width: 165px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  &__mail,
+  &__phone,
+  &__link2{
+    font-size: 12px;
+    line-height: 15px;
+  }
+  &__phone{
+    display: block;
+    margin-bottom: 16px;
+  }
+  &__mail{
+    margin-top: 47px;
+    display: block;
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+  &__link3{
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-right: 75px;
+  }
+}
+
+.scroll-up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 50px;
+  right: 47px;
+  z-index: 8;
+  opacity: 0;
+  &:before{
+    content: "Наверх";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%,4px);
+    font-size: 16px;
+    line-height: 121.1%;
+    letter-spacing: 0.01em;
+    color: $primary;
+  }
+  &--active {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 1100px){
+  .footer{
+    &__links{
+      gap: 16px 25px;
+    }
+    &__c{
+      max-width: 280px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  .footer{
+    padding: 48px 0 64px;
+    &__top{
+      display: block;
+    }
+    &__c{
+      max-width: 328px;
+      margin-top: 32px;
+    }
+    &__links,
+    &__links2{
+      margin-top: 32px;
+      grid-template-columns: 100%;
+    }
+    &__contacts{
+      margin-top: 32px;
+    }
+    &__link,
+    &__mail{
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__link2,
+    &__link3{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__phone{
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &__mail{
+      margin-top: 16px;
+      color: $primary;
+    }
+    &__bottom{
+      margin-top: 32px;
+      display: block;
+    }
+    &__link3{
+      display: block;
+      margin-top: 16px;
+    }
+  }
+
+  .scroll-up{
+    right: 20px;
+    bottom: 40px;
+  }
+}

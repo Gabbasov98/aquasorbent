@@ -1,0 +1,99 @@
+@import "../vars";
+.mbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.mbtn-primary{
+    border-radius: 8px;
+    background-color: $primary;
+    color: #fff;
+    &:hover{
+        background-color: $primaryHover;
+        color: #fff;
+    }
+    &:active{
+        background-color: $primaryActive;
+        color: #fff;
+    }
+    &:disabled{
+        background-color: $gray;
+        color: #fff;
+    }
+}
+
+.mbtn-primary-outline{
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 4px;
+    &:hover{
+        background: rgba(57, 148, 255, 0.1);
+        color: $primary;
+    }
+    &:active{
+        background: rgba(57, 148, 255, 0.4);
+        color: $primary;
+    }
+    &:disabled{
+        background-color: rgba($gray, 0.2);
+        color: $primary;
+    }
+}
+
+.blue-link{
+    color: $primary;
+    &:hover{
+        color: $primaryHover;
+    }
+    &:active{
+        color: $primaryActive;
+    }
+}
+
+.favourite-btn{
+    display: flex;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7878 3.10251C11.283 2.09913 12.7138 2.09913 13.209 3.10251L15.567 7.88023L20.8395 8.64638C21.9468 8.80728 22.3889 10.168 21.5877 10.9491L17.7724 14.668L18.6731 19.9192C18.8622 21.022 17.7047 21.863 16.7143 21.3424L11.9984 18.8631L7.28252 21.3424C6.29213 21.863 5.13459 21.0221 5.32374 19.9192L6.2244 14.668L2.40916 10.9491C1.60791 10.168 2.05005 8.80728 3.15735 8.64638L8.42988 7.88023L10.7878 3.10251ZM11.9984 4.03891L9.74008 8.6148C9.54344 9.01324 9.16332 9.28941 8.72361 9.3533L3.67382 10.0871L7.32788 13.6489C7.64606 13.9591 7.79125 14.4059 7.71614 14.8438L6.85353 19.8732L11.3702 17.4987C11.7635 17.2919 12.2333 17.2919 12.6266 17.4987L17.1433 19.8732L16.2807 14.8438C16.2056 14.4059 16.3508 13.9591 16.6689 13.6489L20.323 10.0871L15.2732 9.3533C14.8335 9.28941 14.4534 9.01324 14.2568 8.6148L11.9984 4.03891Z' fill='%23CBD3DF'/%3E%3C/svg%3E");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    transition: all .3s;
+    &:hover{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7878 3.10251C11.283 2.09913 12.7138 2.09913 13.209 3.10251L15.567 7.88023L20.8395 8.64638C21.9468 8.80728 22.3889 10.168 21.5877 10.9491L17.7724 14.668L18.6731 19.9192C18.8622 21.022 17.7047 21.863 16.7143 21.3424L11.9984 18.8631L7.28252 21.3424C6.29213 21.863 5.13459 21.0221 5.32374 19.9192L6.2244 14.668L2.40916 10.9491C1.60791 10.168 2.05005 8.80728 3.15735 8.64638L8.42988 7.88023L10.7878 3.10251ZM11.9984 4.03891L9.74008 8.6148C9.54344 9.01324 9.16332 9.28941 8.72361 9.3533L3.67382 10.0871L7.32788 13.6489C7.64606 13.9591 7.79125 14.4059 7.71614 14.8438L6.85353 19.8732L11.3702 17.4987C11.7635 17.2919 12.2333 17.2919 12.6266 17.4987L17.1433 19.8732L16.2807 14.8438C16.2056 14.4059 16.3508 13.9591 16.6689 13.6489L20.323 10.0871L15.2732 9.3533C14.8335 9.28941 14.4534 9.01324 14.2568 8.6148L11.9984 4.03891Z' fill='%230075FF'/%3E%3C/svg%3E");
+    }
+    &--active{
+        background-image: url(../img/favourite2.svg);
+        &:hover{
+            background-image: url(../img/favourite2.svg);
+        }
+    }
+}
+
+.shadow-btn{
+    box-shadow: 0px 4px 16px rgba(0, 51, 153, 0.04), 0px 2px 2px rgba(0, 51, 153, 0.08);
+    border-radius: 8px;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: $primary;
+    text-align: center;
+    min-height: 33px;
+    padding: 7px 16px;
+    &._active{
+        box-shadow: inset 0px 4px 16px rgba(0, 51, 153, 0.04), inset 0px 2px 2px rgba(0, 51, 153, 0.08);
+        color: #CBD3DF;
+        pointer-events: none;
+    }
+    &:hover{
+        box-shadow: 0px 3px 12px rgba(0, 51, 153, 0.04), 0px 2px 2px rgba(0, 51, 153, 0.08);
+    }
+}

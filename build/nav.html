@@ -1,0 +1,168 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="category.html" style="display: block; margin-bottom: 20px;">
+            Категории
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="catalog-item2.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара 2
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="article.html" style="display: block; margin-bottom: 20px;">
+            Услуга
+        </a>
+        <a href="article2.html" style="display: block; margin-bottom: 20px;">
+            Услуга 2
+        </a>
+        <a href="article3.html" style="display: block; margin-bottom: 20px;">
+            Услуга 3
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;"  data-modal="orderModal">
+            Оформить заказ
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;"  data-modal="thanksModal">
+            Оформить заказ 2
+        </button>
+
+    </div>
+
+    <div class="modal cart-modal" id="orderModal">
+    <div class="modal__dialog">
+        <div class="modal__top">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.39705 4.55379L4.46967 4.46967C4.73594 4.2034 5.1526 4.1792 5.44621 4.39705L5.53033 4.46967L12 10.939L18.4697 4.46967C18.7626 4.17678 19.2374 4.17678 19.5303 4.46967C19.8232 4.76256 19.8232 5.23744 19.5303 5.53033L13.061 12L19.5303 18.4697C19.7966 18.7359 19.8208 19.1526 19.6029 19.4462L19.5303 19.5303C19.2641 19.7966 18.8474 19.8208 18.5538 19.6029L18.4697 19.5303L12 13.061L5.53033 19.5303C5.23744 19.8232 4.76256 19.8232 4.46967 19.5303C4.17678 19.2374 4.17678 18.7626 4.46967 18.4697L10.939 12L4.46967 5.53033C4.2034 5.26406 4.1792 4.8474 4.39705 4.55379L4.46967 4.46967L4.39705 4.55379Z" fill="#14142B"/>
+                </svg>
+            </button>
+        </div>
+        <div class="modal__scroll">
+            <div class="modal__title display3 extra-bold">Оформить заказ</div>
+            <div class="modal__desc body-text">
+                Укажите ваши данные или войдите через VK или Яндекс —наши менеджеры свяжутся с вами для подтверждения и оформления заказа.
+            </div>
+            <div class="modal__socials">
+                <button class="modal__socials-item mbtn shadow-btn">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.5543 17.3706C26.0369 16.7173 26.1849 16.4266 26.5543 15.8426C26.5609 15.836 30.8317 9.93463 31.2717 7.93329L31.2744 7.93196C31.4931 7.20263 31.2744 6.66663 30.217 6.66663H26.7183C25.8276 6.66663 25.4169 7.12663 25.1969 7.64129C25.1969 7.64129 23.4155 11.9053 20.8954 14.6693C20.082 15.468 19.706 15.724 19.262 15.724C19.0433 15.724 18.7033 15.468 18.7033 14.7386V7.93196C18.7033 7.05729 18.454 6.66663 17.7166 6.66663H12.2151C11.6564 6.66663 11.3244 7.07463 11.3244 7.45463C11.3244 8.28396 12.5844 8.47463 12.7151 10.808V15.8706C12.7151 16.98 12.5138 17.184 12.0671 17.184C10.8777 17.184 7.99094 12.9026 6.28022 8.00263C5.93487 7.05196 5.59753 6.66796 4.70016 6.66796H1.20004C0.20134 6.66796 0 7.12796 0 7.64263C0 8.55196 1.18937 13.0733 5.53086 19.0466C8.42429 23.124 12.4991 25.3333 16.2059 25.3333C18.434 25.3333 18.706 24.8426 18.706 23.9986C18.706 20.1026 18.5046 19.7346 19.6207 19.7346C20.138 19.7346 21.0287 19.9906 23.1088 21.9573C25.4862 24.2893 25.8769 25.3333 27.2076 25.3333H30.7064C31.7038 25.3333 32.2091 24.8426 31.9184 23.8746C31.2531 21.8386 26.7569 17.6506 26.5543 17.3706Z" fill="#0075FF"/>
+                    </svg>
+                </button>
+                <button class="modal__socials-item mbtn shadow-btn">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4V27.9778H19.8879V7.19917V7.13741H19.8255H17.934C14.5794 7.13741 12.5757 8.77283 12.5757 11.51C12.5757 14.4449 13.8268 15.8011 16.4561 17.5699L18.5445 18.9657L12.4461 28H8L13.4555 19.944L13.4903 19.8946L13.4405 19.86C10.4798 17.7577 8.50841 15.5763 8.50841 11.7571C8.50841 6.90026 12.0224 4 17.9115 4H24Z" fill="#0075FF"/>
+                    </svg>
+                </button>
+            </div>
+            <form class="modal__form">
+                <div class="modal__legal switch">
+                    <input type="checkbox">
+                    <label>Юридическое лицо</label>
+                </div>
+                <fieldset class="form-group">
+                    <label>Фамилия</label>
+                    <input type="text">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Имя</label>
+                    <input type="text">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Телефон</label>
+                    <input type="tel" placeholder="+7">
+                </fieldset>
+                <fieldset class="form-group">
+                    <label>Email</label>
+                    <input type="email">
+                </fieldset>
+                <div class="modal__shops">
+                    <div class="modal__shops-switch switch">
+                        <input type="checkbox">
+                        <label>Самовывоз</label>
+                    </div>
+                    <a href="" class="modal__shops-link body-text blue-link">Адреса магазинов</a>
+                </div>
+                <div class="modal__check check">
+                    <input type="checkbox">
+                    <label>
+                        Я даю согласие на обработку
+                        <a href="" class="blue-link">персональных данных</a>
+                    </label>
+                </div>
+                <button class="modal__btn mbtn mbtn-primary">Отправить</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal cart-modal" id="thanksModal">
+    <div class="modal__dialog">
+        <div class="modal__top">
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.39705 4.55379L4.46967 4.46967C4.73594 4.2034 5.1526 4.1792 5.44621 4.39705L5.53033 4.46967L12 10.939L18.4697 4.46967C18.7626 4.17678 19.2374 4.17678 19.5303 4.46967C19.8232 4.76256 19.8232 5.23744 19.5303 5.53033L13.061 12L19.5303 18.4697C19.7966 18.7359 19.8208 19.1526 19.6029 19.4462L19.5303 19.5303C19.2641 19.7966 18.8474 19.8208 18.5538 19.6029L18.4697 19.5303L12 13.061L5.53033 19.5303C5.23744 19.8232 4.76256 19.8232 4.46967 19.5303C4.17678 19.2374 4.17678 18.7626 4.46967 18.4697L10.939 12L4.46967 5.53033C4.2034 5.26406 4.1792 4.8474 4.39705 4.55379L4.46967 4.46967L4.39705 4.55379Z" fill="#14142B"/>
+                </svg>
+            </button>
+        </div>
+        <div class="modal__scroll">
+            <div class="modal__title display3 extra-bold">
+                Заявка успешно оформлена
+            </div>
+            <div class="modal__desc body-text">
+                Спасибо за ваш заказ. В ближайшее время наши менеджеры свяжутся с вами для уточнения деталей.
+            </div>
+            <button class="modal__btn mbtn mbtn-primary" onclick="closeModal()">Закрыть</button>
+        </div>
+
+    </div>
+</div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

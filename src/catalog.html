@@ -1,0 +1,257 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Каталог", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="" class="breadcrumbs__item blue-link">Главная</a>
+                        <a href="" class="breadcrumbs__item blue-link">Каталог продукции</a>
+                        <a href="" class="breadcrumbs__item blue-link">Оборудование</a>
+                        <span class="breadcrumbs__item blue-link">Бытовые фильтры</span>
+                    </div>
+                    <h1 class="catalog__title display3 extra-bold">Бытовые системы обратного осмоса</h1>
+                    <button class="catalog__filter-btn mbtn mbtn-primary">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 16H14.5C15.0523 16 15.5 16.4477 15.5 17C15.5 17.5128 15.114 17.9355 14.6166 17.9933L14.5 18H10.5C9.94772 18 9.5 17.5523 9.5 17C9.5 16.4872 9.88604 16.0645 10.3834 16.0067L10.5 16H14.5H10.5ZM8.5 11H16.5C17.0523 11 17.5 11.4477 17.5 12C17.5 12.5128 17.114 12.9355 16.6166 12.9933L16.5 13H8.5C7.94772 13 7.5 12.5523 7.5 12C7.5 11.4872 7.88604 11.0645 8.38338 11.0067L8.5 11H16.5H8.5ZM5.5 6H19.5C20.0523 6 20.5 6.44772 20.5 7C20.5 7.51284 20.114 7.93551 19.6166 7.99327L19.5 8H5.5C4.94772 8 4.5 7.55228 4.5 7C4.5 6.48716 4.88604 6.06449 5.38338 6.00673L5.5 6H19.5H5.5Z" fill="white"/>
+                        </svg>
+                        <span>Фильтр</span>
+                    </button>
+                    <div class="catalog__wrap">
+                        <aside class="catalog__sidebar">
+                            <div class="filter">
+                                <div class="filter__top">
+                                    <button class="filter__close _close-filter">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.39705 4.55379L4.46967 4.46967C4.73594 4.2034 5.1526 4.1792 5.44621 4.39705L5.53033 4.46967L12 10.939L18.4697 4.46967C18.7626 4.17678 19.2374 4.17678 19.5303 4.46967C19.8232 4.76256 19.8232 5.23744 19.5303 5.53033L13.061 12L19.5303 18.4697C19.7966 18.7359 19.8208 19.1526 19.6029 19.4462L19.5303 19.5303C19.2641 19.7966 18.8474 19.8208 18.5538 19.6029L18.4697 19.5303L12 13.061L5.53033 19.5303C5.23744 19.8232 4.76256 19.8232 4.46967 19.5303C4.17678 19.2374 4.17678 18.7626 4.46967 18.4697L10.939 12L4.46967 5.53033C4.2034 5.26406 4.1792 4.8474 4.39705 4.55379L4.46967 4.46967L4.39705 4.55379Z" fill="#14142B"/>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="filter__scroll">
+                                    <div class="filter__title display3 extra-bold">Фильтр</div>
+
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Производитель</div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>Kflow</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>Pentair Merlin</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>Raifil</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Комплектация</div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>Стандартная</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>С насосом</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>С системой контроля давления</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>С автоматическим управлением</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>Slim Line</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Материал корпуса</div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>комбинированные корпуса</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>металл</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>пластик</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>плексиглас</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Размер установки</div>
+                                        <div class="filter__range form-group">
+                                            <span class="filter__range-title">от</span>
+                                            <input type="text" placeholder="200">
+                                            <span class="filter__range-title">до</span>
+                                            <input type="text" placeholder="700">
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Размер установки</div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>Big Blue</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>Slim Line</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group">
+                                        <div class="filter__subtitle">Вид картриджа</div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>ионообменные</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>механические</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>обезжелезивающие</label>
+                                        </div>
+                                        <div class="filter__check check">
+                                            <input type="checkbox">
+                                            <label>угольные</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group">
+                                    <div class="filter__subtitle">Особенности</div>
+                                    <div class="filter__check check">
+                                        <input type="checkbox">
+                                        <label>установка под мойку</label>
+                                    </div>
+                                    <div class="filter__check check">
+                                        <input type="checkbox">
+                                        <label>для коттеджа</label>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <button class="filter__btn mbtn mbtn-primary">Подобрать</button>
+                            </div>
+
+                            <div class="filter__bg _close-filter"></div>
+                        </aside>
+
+                        <div class="catalog__content">
+                            <div class="catalog__sort">
+                                <div class="catalog__select">
+                                    <span class="catalog__select-title">Показывать</span>
+                                    <select class="custom-select">
+                                        <option selected>Сначала популярные</option>
+                                        <option>Подороже</option>
+                                        <option>Подешевле</option>
+                                        <option>Новинки каталога</option>
+                                        <option>Со скидками</option>
+                                    </select>
+                                </div>
+                                <div class="catalog__select">
+                                    <span class="catalog__select-title">На странице</span>
+                                    <select class="custom-select">
+                                        <option selected>12</option>
+                                        <option>24</option>
+                                        <option>36</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="catalog__grid">
+                                @@include('components/cards/_product-card.html',{"img":"product2","title":"Кабинетный умягчитель воды  Ecosoft FU0835CABCE","price":"60 300","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product3","title":"Система очистки воды Raifil NOVO 5 (PU905W5-WF14-PR-EZ)","price":"18 232","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product4","title":"Дозирующий насос Этатрон Dl-PM-2-7","price":"32 640","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product2","title":"Кабинетный умягчитель воды  Ecosoft FU0835CABCE","price":"60 300","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product3","title":"Система очистки воды Raifil NOVO 5 (PU905W5-WF14-PR-EZ)","price":"18 232","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product4","title":"Дозирующий насос Этатрон Dl-PM-2-7","price":"32 640","buy":"1"})
+
+                                <div class="catalog-quiz">
+                                    <div class="catalog-quiz__content">
+                                        <div class="catalog-quiz__title display4 semi-bold">Пройдите опрос</div>
+                                        <div class="catalog-quiz__desc body-text-big">Узнайте качество вашей воды и получите бесплатные рекомендации</div>
+                                    </div>
+                                    <a href="" class="catalog-quiz__btn mbtn">Пройти</a>
+                                    <img src="img/quiz.svg" alt="" class="catalog-quiz__img">
+                                </div>
+
+                                @@include('components/cards/_product-card.html',{"img":"product2","title":"Кабинетный умягчитель воды  Ecosoft FU0835CABCE","price":"60 300","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product3","title":"Система очистки воды Raifil NOVO 5 (PU905W5-WF14-PR-EZ)","price":"18 232","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product4","title":"Дозирующий насос Этатрон Dl-PM-2-7","price":"32 640","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product2","title":"Кабинетный умягчитель воды  Ecosoft FU0835CABCE","price":"60 300","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product3","title":"Система очистки воды Raifil NOVO 5 (PU905W5-WF14-PR-EZ)","price":"18 232","buy":"1"})
+                                @@include('components/cards/_product-card.html',{"img":"product4","title":"Дозирующий насос Этатрон Dl-PM-2-7","price":"32 640","buy":"1"})
+                            </div>
+                            <div class="pagination">
+                                <a href="" class="pagination__btn pagination__btn--disabled mbtn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.2204 11.9999L15.8889 17.6684C16.2795 18.059 16.2795 18.6921 15.8889 19.0826C15.4984 19.4732 14.8652 19.4732 14.4747 19.0826L8.11076 12.7187C7.91086 12.5188 7.81329 12.2553 7.81804 11.9933C7.81667 11.7356 7.91429 11.4775 8.11092 11.2809L14.4749 4.91692C14.8654 4.52639 15.4986 4.52639 15.8891 4.91692C16.2796 5.30744 16.2796 5.94061 15.8891 6.33113L10.2204 11.9999Z" fill="#667695"/>
+                                    </svg>
+                                </a>
+                                <a href="" class="pagination__item pagination__item--active mbtn">1</a>
+                                <a href="" class="pagination__item mbtn">2</a>
+                                <a href="" class="pagination__item mbtn">3</a>
+                                <span class="pagination__item pagination__item--dots mbtn">...</span>
+                                <a href="" class="pagination__item mbtn">24</a>
+                                <a href="" class="pagination__btn pagination__btn--next mbtn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.7795 11.9957L8.11092 6.3271C7.72039 5.93658 7.72039 5.30341 8.11092 4.91289C8.50144 4.52236 9.13461 4.52236 9.52513 4.91289L15.8891 11.2769C16.089 11.4768 16.1866 11.7402 16.1818 12.0022C16.1832 12.2599 16.0856 12.518 15.8889 12.7147L9.52498 19.0786C9.13445 19.4691 8.50129 19.4691 8.11076 19.0786C7.72024 18.6881 7.72024 18.0549 8.11076 17.6644L13.7795 11.9957Z" fill="#667695"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about">
+                <div class="container">
+                    <div class="about__title display3">Бытовые системы обратного осмоса</div>
+                    <div class="about__wrap">
+                        <div class="about__left">
+                            <div class="about__text body-text-big">
+                                <p>Чтобы избежать проблем и опасностей, которые таит в себе неочищенная вода, необходимо подобрать оборудование, которое наиболее оптимальным способом будет решать задачу по очистке воды именно из вашего источника водоснабжения. Для этого, прежде всего, необходимо провести анализ воды, чтобы понимать, от каких примесей её надо очищать. Также стоит определиться с объёмом потребления очищенной воды, чтобы подобрать оборудование подходящего типоразмера.</p>
+                                <p>Если Вы наблюдаете на сантехнике ржавые подтёки, а вода из крана течёт мутная, с елезистым осадком, то Вам необходима система аэрации и удаления железа. Накипь на бытовых приборах, налёт и белый осадок на технике говорят о необходимости установки фильтра-умягчителя. В случаях, когда анализ воды выявляет проблемы сразу по многим показателям, очистить воду помогут комплексные системы. Питьевую воду в Вашем доме обеспечат бытовые фильтры очистки воды под мойку.</p>
+                                <p>ЦКВТ предлагает полный спектр водоочистного оборудования для любой задачи по водоподготовке – от очистки воды в коттеджах и получении чистой питьевой воды в квартирах до водоподготовки на предприятиях и производствах. В нашем каталоге Вы найдёте оборудование, отвечающее именно Вашим требованиям и задачам.</p>
+                            </div>
+                        </div>
+                        <div class="about__items">
+                            @@include('components/cards/_info-card.html',{"img":"info","title":"Статьи и полезные материалы","desc":"Расскажем как подобрать оборудование и установить его самостоятельно"})
+                            @@include('components/cards/_info-card.html',{"img":"info2","title":"Стандарты <br> и нормативы","desc":"Все что нужно знать, чтобы не запутаться в формах, СНИПах, ГОСТах и т.д."})
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="category.html" style="display: block; margin-bottom: 20px;">
+            Категории
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="catalog-item2.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара 2
+        </a>
+        <a href="cart.html" style="display: block; margin-bottom: 20px;">
+            Корзина
+        </a>
+        <a href="article.html" style="display: block; margin-bottom: 20px;">
+            Услуга
+        </a>
+        <a href="article2.html" style="display: block; margin-bottom: 20px;">
+            Услуга 2
+        </a>
+        <a href="article3.html" style="display: block; margin-bottom: 20px;">
+            Услуга 3
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;"  data-modal="orderModal">
+            Оформить заказ
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;"  data-modal="thanksModal">
+            Оформить заказ 2
+        </button>
+
+    </div>
+
+    @@include('components/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

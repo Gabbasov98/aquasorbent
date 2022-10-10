@@ -1,0 +1,39 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"404", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class="error-page">
+                <div class="container">
+                    <div class="error-page__inner">
+                        <div class="error-page__img">
+                            <img src="img/error.png" alt="">
+                            <span class="error-page__img-text">404</span>
+                        </div>
+                        <h1 class="error-page__title display3 extra-bold">Такой страницы не существует</h1>
+                        <div class="error-page__desc">
+                            <p>Попробуйте вернуться назад или воспользуйтесь поиском.</p>
+                            <p>Код ошибки: <span class="semi-bold">404</span></p>
+                        </div>
+                        <div class="error-page__links">
+                            <a href="" class="error-page__link blue-link">Вернуться на главную</a>
+                            <a href="" class="error-page__link blue-link">Перейти в каталог</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+    @@include('components/_popups.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

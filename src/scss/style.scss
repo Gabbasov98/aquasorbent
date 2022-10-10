@@ -1,0 +1,12 @@
+@import 'reset';
+@import '_global';
+@import '_ui';
+@import 'page-blocks/page-blocks.scss';
+@import 'layout/layout.scss';
+@import "pages/index";
+@import "pages/catalog";
+@import "pages/category";
+@import "pages/catalog-item";
+@import "pages/cart";
+@import "pages/article";
+@import "pages/error";
