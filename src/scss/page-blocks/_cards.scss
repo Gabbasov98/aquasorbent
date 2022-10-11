@@ -453,6 +453,25 @@
       }
     }
   }
+
+  .catalog-card{
+    box-shadow: none;
+    padding: 8px 16px;
+    min-height: unset;
+    &:hover{
+      box-shadow: none;
+    }
+    &__img,
+    &__num{
+      display: none;
+    }
+    &__text{
+      max-width: 100%;
+    }
+    &__title{
+      font-size: 14px;
+    }
+  }
 }
 
 

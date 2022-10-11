@@ -1,5 +1,7 @@
 $(".header__catalog-btn").click(function () {
     $(".header__catalog-btn").toggleClass("header__catalog-btn--active")
+    $(".header-catalog").toggleClass("header-catalog--active")
+    $("body").toggleClass("fixed-body")
 })
 
 if (window.innerWidth<992){
@@ -11,10 +13,15 @@ if (window.innerWidth<992){
 }
 
 $(".header-catalog__tab").click(function () {
-    $(".header-catalog__tab").removeClass("header-catalog__tab--active")
-    $(this).addClass("header-catalog__tab--active")
-    $(".header-catalog__content").fadeOut()
-    $(this).siblings(".header-catalog__content").fadeIn()
+    if(window.innerWidth>992) {
+        $(".header-catalog__tab").removeClass("header-catalog__tab--active")
+        $(this).addClass("header-catalog__tab--active")
+        $(".header-catalog__content").fadeOut()
+        $(this).siblings(".header-catalog__content").fadeIn()
+    } else {
+        $(this).toggleClass("header-catalog__tab--active")
+        $(this).siblings(".header-catalog__content").slideToggle()
+    }
 })
 
 fixHeader()

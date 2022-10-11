@@ -101,6 +101,29 @@
       font-size: 16px;
     }
   }
+  &__selected{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 8px);
+    margin-bottom: 16px;
+  }
+  &__item{
+    margin: 0 8px 8px 0;
+    padding: 0 16px;
+    height: 31px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    &-remove{
+      margin-left: 8px;
+    }
+    &--all{
+      background-color: $grayBg;
+      color: $darkGray;
+      flex-grow: 1;
+      width: 100%;
+    }
+  }
 }
 
 .catalog-quiz{
